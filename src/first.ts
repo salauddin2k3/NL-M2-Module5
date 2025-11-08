@@ -36,10 +36,45 @@ const friendsSpread = [...friend1, ...friend2, ...friend3];
 
 //* Rest operator
 
-const restOperator = (...friends : string[]) => {
-    friends.forEach((friend : string) => console.log(friend))
+// const restOperator = (...friends : string[]) => {
+//     friends.forEach((friend : string) => console.log(friend))
+// };
+
+// restOperator('Abul', "dabul")
+
+
+//* Destructuring > array
+
+const deArrFriends: string[] = ['abul', 'kabul', 'Babul'];
+
+const [, a] = deArrFriends;
+const [, , b] = deArrFriends;
+
+// console.log(b, a);
+
+//* Destructuring > obj
+
+const deObjUser = {
+    id: 101,
+    name: {
+        firstName : 'abul',
+        lastName: 'mia',
+        middleName: {
+            fromFather: 'Dabluuu',
+            fromMother: 'Babluuuuu'
+        }
+    }
+
 };
 
-restOperator('Abul', "dabul")
+// const {name : {firstName}} = deObjUser;
+const {name : {middleName : {fromMother}}} = deObjUser;
+
+// console.log(id);
+// console.log(firstName);
+// console.log(fromMother);
+
+
+
 
 
