@@ -76,5 +76,28 @@ const {name : {middleName : {fromMother}}} = deObjUser;
 
 
 
+//* Union and Intersection
+
+type User1 = {
+    Name: string,
+    Age: Number,
+};
+
+type User2 = {
+    Address: string,
+    Contact: Number,
+};
+
+type AllUser = User1 | User2;
+
+const user : AllUser = {
+    Address: 'Salah',
+    Contact: 1571,
+}
+
+
+
+
+
 
 
