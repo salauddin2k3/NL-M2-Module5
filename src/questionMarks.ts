@@ -21,7 +21,6 @@ const ageCalculator = (age: number) => {
 };
 
 // console.log(ageCalculator(25)); 
-// console.log(ageCalculator(15)); 
 
 //* Nullish Operator
 
